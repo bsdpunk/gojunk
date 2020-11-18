@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Meaningful Page Title</title>
+  <style>
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: absolute;
+}
+.hexagon:hover {
+background: blue;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
+.hex1 {
+  top: 20px;
+  left: 0px;
+}
+.hex2 {
+  top: 20px;
+  left: 110px;
+}
+.hex3 {
+  top: 20px;
+  left: 220px;
+}
+.hex4 {
+  top: 110px;
+  left: 55px;
+}
+.hex5 {
+  top: 110px;
+  left: 165px;
+}
+.hex6 {
+  top: 110px;
+  left: 275px;
+}
+  </style>
+</head>
+<body>
+
+<p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+<div style="position:absolute; top:30px">
+  <div class="hexagon hex1"></div>
+  <div class="hexagon hex2"></div>
+  <div class="hexagon hex3"></div>
+  <div class="hexagon hex4"></div>
+  <div class="hexagon hex5"></div>
+  <div class="hexagon hex6"></div>
+</div>
+</body>
+</html>
